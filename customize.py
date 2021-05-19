@@ -3,6 +3,7 @@ LINEWIDTH = 3.48692403487
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 try:
+    from quantum_plots import global_setup
     global_setup(fontsize = 10)
 except:
     pass
@@ -172,5 +173,5 @@ ax.set_ylabel("Average fidelity")
 ax.set_xlabel(r"Number of $\pi$ rotations")
 ax.set_xlim((0, 1700))
 fig.tight_layout()
-fig.savefig("figures\cross_talk.pdf")
+fig.savefig("figures/cross_talk.pdf")
 fig.show()

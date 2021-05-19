@@ -1,13 +1,13 @@
-from quantum_plots import global_setup
 TEXTWIDTH = 5.93
 LINEWIDTH = 3.22
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 try:
+    from quantum_plots import global_setup
     global_setup(fontsize = 10)
 except:
     pass
-plt.rcParams.update({"text.usetex": True})
+plt.rcParams.update({"text.usetex": False})
 
 num_qubits = 3
 def get_operators_labels():

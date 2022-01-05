@@ -19,5 +19,6 @@ jobs:
     - name: Test code examples for the pulse paper
       run: |
         python -m pip install --upgrade pip
+        pip install numpy==1.21
         pip install qutip-qip[full]==0.2 joblib pytest-custom_exit_code
         pytest *.py --suppress-no-test-exit-code
